@@ -195,8 +195,8 @@ modules:
   - name: vkd3d
     sources: &vkd3d-sources
       - type: archive
-        url: https://dl.winehq.org/vkd3d/source/vkd3d-1.9.tar.xz
-        sha256: 9d1ebc6f36cccf40cffda3176851f73a0501b90c4d04e782abe79ca703057a4b
+        url: https://dl.winehq.org/vkd3d/source/vkd3d-1.11.tar.xz
+        sha256: 4912271f1be49ab1ca9b59fc4faa9c4de8a873b4cebe11e7f422d61ae13e7410
     modules:
       - name: spirv-headers
         buildsystem: cmake-ninja
@@ -549,9 +549,9 @@ modules:
         --origin=flatpak ${FLATPAK_ID}.mono
     sources:
       - type: archive
-        url: https://dl.winehq.org/wine/wine-mono/8.1.0/wine-mono-8.1.0-x86.tar.xz
+        url: https://dl.winehq.org/wine/wine-mono/9.1.0/wine-mono-9.1.0-x86.tar.xz
         strip-components: 0
-        sha256: 4e3e8a40729e4c9e3e9e651cebe4f1aed8f9a4d22e991e6cd24608687f0eedd4
+        sha256: 601169d0203b291fbfd946b356a9538855e01de22abd470ded73baf312c88767
         x-checker-data:
           type: html
           url: *wine-addons-url
